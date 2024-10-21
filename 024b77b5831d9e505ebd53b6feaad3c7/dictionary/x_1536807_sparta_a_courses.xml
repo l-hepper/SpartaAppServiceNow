@@ -7,8 +7,8 @@
                 <element inactive_on_update="false" label="In Progress" value="in_progress"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true" label="Start Date" mandatory="true" max_length="40" name="start_date" type="glide_date_time"/>
-        <element attributes="edge_encryption_enabled=true" choice="3" default="java_test" display="true" label="Stream" mandatory="true" max_length="40" name="stream" type="choice">
+        <element attributes="edge_encryption_enabled=true" label="Start Date" mandatory="true" max_length="40" name="start_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="java_test" label="Stream" mandatory="true" max_length="40" name="stream" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Business Solutions" value="business_solutions"/>
                 <element inactive_on_update="false" label="ServiceNow" value="servicenow"/>
@@ -20,8 +20,8 @@
                 <element inactive_on_update="false" label="Java Test" value="java_test"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true" label="Course Id" mandatory="true" max_length="40" name="course_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Course Id" mandatory="true" max_length="40" name="course_id" type="string"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="End Date" mandatory="true" max_length="40" name="end_date" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="End Date" mandatory="true" max_length="40" name="end_date" type="glide_date"/>
     </element>
 </database>

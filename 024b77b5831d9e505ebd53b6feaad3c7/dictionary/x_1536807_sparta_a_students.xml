@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="2350df3e83dd16105ebd53b6feaad3a2" label="Students" max_length="40" name="x_1536807_sparta_a_students" type="collection">
+        <element label="Last Name" max_length="40" name="last_name" type="string"/>
+        <element label="First Name" max_length="40" name="name" type="string"/>
+        <element label="Course" max_length="32" name="course" reference="x_1536807_sparta_a_courses" type="reference"/>
+        <index name="index">
+            <element name="course"/>
+        </index>
+    </element>
+</database>
